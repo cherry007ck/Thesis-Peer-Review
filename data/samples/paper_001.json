@@ -1,0 +1,34 @@
+{
+  "id": "paper_001",
+  "title": "Attention-Based Neural Networks for Causal Discovery in Time-Series Data",
+  "abstract": "This paper proposes a novel attention mechanism for causal discovery in multivariate time-series. The proposed system causes significant improvement in causal graph recovery. Various experiments on several datasets demonstrate that the model outperforms baselines. The results prove that attention heads learn causal structure automatically. Future work will explore larger datasets etc.",
+  "authors": [
+    {"name": "John A. Smith", "affiliation": "Department of Computer Science, State University"},
+    {"name": "Maria L. Chen", "affiliation": "AI Research Lab, Tech Institute"}
+  ],
+  "keywords": ["causal discovery", "attention mechanism", "time-series", "neural network", "causal inference"],
+  "year": 2024,
+  "doi": "10.9999/mock.2024.paper001",
+  "sections": [
+    {
+      "title": "Introduction",
+      "content": "Causal discovery from observational data is a fundamental problem in machine learning and statistics. Traditional methods such as PC algorithm and LiNGAM rely on strong assumptions that are often violated in practice. This paper proposes a novel framework that causes a paradigm shift in how we approach causal graph recovery. Our system leads to substantially better performance compared to all existing methods. We claim that our model proves the existence of a direct relationship between attention weights and true causal edges, which represents a major contribution to the field. The framework is a neural network that uses multi-head self-attention to model temporal dependencies."
+    },
+    {
+      "title": "Related Work",
+      "content": "Prior work on causal discovery includes Granger causality, structural equation models, and constraint-based methods. Granger (1969) showed that predictability in time-series can be used as a proxy for causation. More recently, deep learning approaches have been applied. Some papers have used graph neural networks for causal modelling. Our method is different because it uses attention. We compare against PCMCI and NeuralGranger as baselines. Several other methods exist but are not directly comparable."
+    },
+    {
+      "title": "Methodology",
+      "content": "We propose a Temporal Causal Attention Network (TCAN). The system is trained on labeled synthetic data generated using known ground-truth causal graphs. This contradicts our claim of unsupervised learning in the abstract. The model consists of a classifier with L layers of multi-head self-attention. The accuracy of the model is computed as accuracy = TP / total_samples, where TP is the number of correctly identified causal edges. The loss function is defined as loss = -log(p(y|x)) with standard cross-entropy. The model is trained for an epoch, meaning one gradient update step, using Adam optimizer with a fixed learning rate of 0.001. No hyperparameter sensitivity analysis was conducted. The agent uses several training techniques to improve convergence."
+    },
+    {
+      "title": "Experiments",
+      "content": "We evaluate TCAN on three synthetic datasets: Sachs, ER-2, and ER-4. The system achieves 87% accuracy on the Sachs dataset. Training was performed on a single GPU. We do not report confidence intervals or p-values. The model outperforms NeuralGranger by a large margin on all datasets. No ablation study isolating the contribution of the attention mechanism versus the baseline transformer architecture was performed. The classifier is evaluated using standard benchmark metrics. Results show that the model increases accuracy significantly."
+    },
+    {
+      "title": "Discussion",
+      "content": "The results suggest that attention mechanisms can capture causal relationships. The module performance demonstrates the power of our proposed framework. One limitation is that the model assumes linear causal relationships, which may not hold in all domains. The agent showed strong performance but may struggle with high-dimensional data. We believe this work opens new directions for causal machine learning research. Future extensions could incorporate interventional data to strengthen causal identification."
+    }
+  ]
+}

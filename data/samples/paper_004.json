@@ -1,0 +1,43 @@
+{
+  "id": "paper_004",
+  "title": "General Identifiability and Achievability for Causal Representation Learning",
+  "abstract": "This paper focuses on causal representation learning (CRL) under a general nonparametric latent causal model and a general transformation model that maps the latent data to the observational data. It establishes identifiability and achievability results using two hard uncoupled interventions per node in the latent causal graph. Notably, one does not know which pair of intervention environments have the same node intervened (hence, uncoupled). For identifiability, the paper establishes that perfect recovery of the latent causal model and variables is guaranteed under uncoupled interventions. For achievability, an algorithm is designed that uses observational and interventional data and recovers the latent causal model and variables with provable guarantees. This algorithm leverages score variations across different environments to estimate the inverse of the transformer and, subsequently, the latent variables. The analysis, additionally, recovers the identifiability result for two hard coupled interventions, that is when metadata about the pair of environments that have the same node intervened is known. This paper also shows that when observational data is available, additional faithfulness assumptions that are adopted by the existing literature are unnecessary.",
+  "authors": [
+    {
+      "name": "Burak Varıcı"
+    },
+    {
+      "name": "Emre Acartürk"
+    },
+    {
+      "name": "Karthikeyan Shanmugam"
+    },
+    {
+      "name": "Ali Tajer"
+    }
+  ],
+  "keywords": [
+    "cs.LG",
+    "stat.ML"
+  ],
+  "year": 2023,
+  "doi": "https://arxiv.org/abs/2310.15450",
+  "sections": [
+    {
+      "title": "Introduction",
+      "content": "This paper focuses on causal representation learning (CRL) under a general nonparametric latent causal model and a general transformation model that maps the latent data to the observational data. It establishes identifiability and achievability results using two hard uncoupled interventions per node in the"
+    },
+    {
+      "title": "Methodology",
+      "content": "latent causal graph. Notably, one does not know which pair of intervention environments have the same node intervened (hence, uncoupled). For identifiability, the paper establishes that perfect recovery of the latent causal model and variables is guaranteed under uncoupled interventions. For achievability, an algorithm"
+    },
+    {
+      "title": "Experiments",
+      "content": "is designed that uses observational and interventional data and recovers the latent causal model and variables with provable guarantees. This algorithm leverages score variations across different environments to estimate the inverse of the transformer and, subsequently, the latent variables. The analysis, additionally, recovers the"
+    },
+    {
+      "title": "Conclusion",
+      "content": "identifiability result for two hard coupled interventions, that is when metadata about the pair of environments that have the same node intervened is known. This paper also shows that when observational data is available, additional faithfulness assumptions that are adopted by the existing literature are unnecessary."
+    }
+  ]
+}
